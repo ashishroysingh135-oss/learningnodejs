@@ -1,0 +1,230 @@
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f172a;
+    color: #f1f5f9;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #111c30;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #22c55e;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #22c55e;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 110px 20px;
+    background: linear-gradient(135deg, #101b30, #12352d);
+}
+
+.tag {
+    color: #22c55e;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.3;
+}
+
+.hero h1 span {
+    color: #22c55e;
+}
+
+.hero p {
+    color: #cbd5e1;
+    margin: 20px auto;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+button {
+    background: #22c55e;
+    color: #052e16;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #16a34a;
+}
+
+/* Learning Sections */
+.learning-section {
+    padding: 65px 8%;
+}
+
+.learning-section h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.learning-section > p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* Topic Cards */
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.topic-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    border-color: #22c55e;
+}
+
+.topic-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.topic-card p {
+    color: #94a3b8;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.topic-card button {
+    width: 100%;
+}
+
+/* Lesson Page */
+.lesson-section {
+    display: none;
+    padding: 50px 8%;
+    min-height: 70vh;
+}
+
+.back-btn {
+    margin-bottom: 30px;
+}
+
+#lessonContent h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #22c55e;
+}
+
+#lessonContent h2 {
+    margin: 30px 0 15px;
+}
+
+#lessonContent p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+#lessonContent pre {
+    background: #020617;
+    color: #86efac;
+    padding: 22px;
+    border-radius: 8px;
+    overflow-x: auto;
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+.output {
+    background: #1e293b;
+    border-left: 4px solid #22c55e;
+    padding: 18px;
+    margin-top: 15px;
+    color: #86efac;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 35px;
+    color: #94a3b8;
+    line-height: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learning-section {
+        padding: 45px 6%;
+    }
+}

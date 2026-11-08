@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Learning Academy</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">Node<span>.Learn</span></div>
+
+        <nav>
+            <a href="#" onclick="showHome()">Home</a>
+            <a href="#basic">Basic Learning</a>
+            <a href="#advanced">Advanced Learning</a>
+            <a href="#more">Learn More</a>
+        </nav>
+    </header>
+
+    <!-- Homepage -->
+    <section class="hero" id="home">
+        <p class="tag">NODE.JS LEARNING PLATFORM</p>
+        <h1>Learn Node.js From <span>Basic to Advanced</span></h1>
+        <p>
+            Understand Node.js concepts with simple explanations,
+            practical code examples and outputs.
+        </p>
+        <button onclick="showSection('basic')">
+            Start Learning →
+        </button>
+    </section>
+
+    <!-- Basic Learning -->
+    <section class="learning-section" id="basic">
+        <h2>Basic Learning</h2>
+        <p>Start learning Node.js fundamentals.</p>
+        <div class="topic-grid" id="basicTopics"></div>
+    </section>
+
+    <!-- Advanced Learning -->
+    <section class="learning-section" id="advanced">
+        <h2>Advanced Learning</h2>
+        <p>Understand important backend development concepts.</p>
+        <div class="topic-grid" id="advancedTopics"></div>
+    </section>
+
+    <!-- Learn More -->
+    <section class="learning-section" id="more">
+        <h2>Learn More</h2>
+        <p>Explore additional Node.js concepts.</p>
+        <div class="topic-grid" id="moreTopics"></div>
+    </section>
+
+    <!-- Lesson Display -->
+    <section class="lesson-section" id="lesson">
+        <button class="back-btn" onclick="showHome()">
+            ← Back to Home
+        </button>
+
+        <div id="lessonContent"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Node.Learn</h3>
+        <p>Learn Node.js. Build Your Backend Skills.</p>
+        <p>© 2026 Node.js Learning Academy</p>
+    </footer>
+
+<script src="index.js"></script>
+</body>
+</html>
